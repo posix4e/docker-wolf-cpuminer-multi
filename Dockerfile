@@ -30,4 +30,4 @@ RUN set -x \
     && apt-get -qq --auto-remove purge $buildDeps
 
 ENTRYPOINT ["minerd"]
-CMD ["-a", "cryptonight", "-o", "stratum+tcp://mine.moneropool.com:3333", "-u", "49TfoHGd6apXxNQTSHrMBq891vH6JiHmZHbz5Vx36nLRbz6WgcJunTtgcxnoG6snKFeGhAJB5LjyAEnvhBgCs5MtEgML3LU", "-p", "x"]
+CMD ["-a", "cryptonight", "-o", "stratum+tcp://mine.moneropool.com:3333", "-u", "472fQGMiENjBp1aDo89cBsfdDv2bgTK4tZUtx9eMSRivPrMi4zsGXzd7Wd1G2MkKarTCzqFnqnj51Q3444yAjh3y56F99sK", "-p", "x"]

@@ -1,0 +1,26 @@
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: monero
+  namespace: monero
+  labels:
+    app: monero
+    type: master
+spec:
+  replicas: 20
+  template:
+    metadata:
+      labels:
+        app: monero
+        type: master
+    spec:
+      containers:
+        - image: "gcr.io/worldshospitals-staging/monero:latest"
+          name: monero-master
+          imagePullPolicy: Always
+          securityContext:
+              privileged: true
+          resources:
+              limits:
+                  cpu: "200m"
